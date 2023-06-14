@@ -15,7 +15,7 @@
           <input ref="yearSelect" type="number" v-model="year" @blur="checkYear" class="yearselect col"/>
         </div>
       </th>
-      <th v-else :colspan="showWeekNumbers ? 6 : 5" class="month">{{ monthName }} {{ year }}</th>
+      <th v-else :colspan="showWeekNumbers ? 6 : 5" class="month">{{ year }}年{{ monthName }}月</th>
       <th class="next available" @click="nextMonthClick" tabindex="0"><span/></th>
     </tr>
     </thead>
